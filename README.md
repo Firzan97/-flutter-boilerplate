@@ -1,6 +1,6 @@
 # flutter_boiler
 
-A new Flutter project.
+A boilerplate project created in flutter using GetX.
 
 ## Getting Started
 
