@@ -29,9 +29,12 @@ samples, guidance on mobile development, and a full API reference.
 Here is the core folder structure which flutter provides.
 
 ```sh
-cd dillinger
-npm i
-node app
+flutter-app/
+|- android
+|- build
+|- ios
+|- lib
+|- test
 ```
 Here is the folder structure we have been using in this project
 
