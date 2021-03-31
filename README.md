@@ -14,3 +14,42 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+##Boilerplate Features:
+
+- Splash
+- Login
+- Routing
+- Config
+- Theme
+- GetX
+
+##Folder Structure:
+
+Here is the core folder structure which flutter provides.
+
+```sh
+cd dillinger
+npm i
+node app
+```
+Here is the folder structure we have been using in this project
+
+```sh
+lib/
+|- data/
+|- helpers/
+|- models/
+|- services/
+|- views/
+|- widgets/
+|- config.dart
+|- locator.dart
+|- main_prod.dart
+|- main_stag.dart
+|- main.dart
+|- routes.dart
+```
+
+
+
