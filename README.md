@@ -24,7 +24,7 @@ samples, guidance on mobile development, and a full API reference.
 - Theme
 - GetX
 
-##Folder Structure:
+## Folder Structure:
 
 Here is the core folder structure which flutter provides.
 
