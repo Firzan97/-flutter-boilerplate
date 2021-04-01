@@ -6,6 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_flavor/flutter_flavor.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:catcher/handlers/console_handler.dart';
+import 'package:catcher/mode/dialog_report_mode.dart';
+import 'package:catcher/model/catcher_options.dart';
+import 'package:catcher/catcher.dart';
 
 void main() {
   //This for the flavour
@@ -27,7 +31,22 @@ void main() {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-  runApp(MyApp());
+  CatcherOptions debugOptions = CatcherOptions(SilentReportMode(), [
+    ToastHandler(),
+  ], localizationOptions: [
+    LocalizationOptions.buildDefaultMalayOptions()
+  ]);
+
+  /// Release configuration. Same as above, but once user accepts dialog, user will be prompted to send email with crash to support.
+  CatcherOptions releaseOptions = CatcherOptions(SilentReportMode(), [
+    EmailManualHandler(["support@email.com"])
+  ]);
+
+  /// STEP 2. Pass your root widget (MyApp) along with Catcher configuration:
+  Catcher(
+      rootWidget: MyApp(),
+      debugConfig: debugOptions,
+      releaseConfig: releaseOptions);
 }
 
 class MyApp extends StatelessWidget {

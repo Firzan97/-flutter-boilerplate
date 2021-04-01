@@ -1,10 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter/material.dart';
 
-class SplashViewModel extends GetxController {
+class HomeController extends GetxController {
   TextEditingController num1 = TextEditingController();
   TextEditingController num2 = TextEditingController();
+
   @override
   void onInit() async {
     super.onInit();

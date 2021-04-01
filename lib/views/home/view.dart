@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boiler/views/splash/viewmodel.dart';
+import 'package:flutter_boiler/views/home/viewmodel.dart';
 import 'package:get/get.dart';
+import 'package:catcher/catcher.dart';
 
-class Splash extends StatelessWidget {
-  final vModel = Get.put(SplashViewModel());
+class Home extends StatelessWidget {
+  final HomeController vModel = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +25,7 @@ class Splash extends StatelessWidget {
               },
             ),
             TextButton(
-              child: Text("Next page"),
+              child: Text(null),
               onPressed: () {
                 Get.toNamed("/splash");
               },

@@ -4,10 +4,28 @@
 
 #import "GeneratedPluginRegistrant.h"
 
+#if __has_include(<catcher/Catcher.h>)
+#import <catcher/Catcher.h>
+#else
+@import catcher;
+#endif
+
 #if __has_include(<connectivity/FLTConnectivityPlugin.h>)
 #import <connectivity/FLTConnectivityPlugin.h>
 #else
 @import connectivity;
+#endif
+
+#if __has_include(<device_info/FLTDeviceInfoPlugin.h>)
+#import <device_info/FLTDeviceInfoPlugin.h>
+#else
+@import device_info;
+#endif
+
+#if __has_include(<flutter_mailer/FlutterMailerPlugin.h>)
+#import <flutter_mailer/FlutterMailerPlugin.h>
+#else
+@import flutter_mailer;
 #endif
 
 #if __has_include(<flutter_secure_storage/FlutterSecureStoragePlugin.h>)
@@ -43,7 +61,10 @@
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
+  [Catcher registerWithRegistrar:[registry registrarForPlugin:@"Catcher"]];
   [FLTConnectivityPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTConnectivityPlugin"]];
+  [FLTDeviceInfoPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTDeviceInfoPlugin"]];
+  [FlutterMailerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterMailerPlugin"]];
   [FlutterSecureStoragePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterSecureStoragePlugin"]];
   [FluttertoastPlugin registerWithRegistrar:[registry registrarForPlugin:@"FluttertoastPlugin"]];
   [FLTPackageInfoPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPackageInfoPlugin"]];
