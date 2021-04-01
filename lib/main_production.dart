@@ -20,7 +20,6 @@ void main() {
     variables: {
       "endpointApi": Config.endpointPro,
       "endpointAuthApi": Config.endpointAuthDev,
-      "endpointGraphQLUrl": Config.endpointGraphQLDev
     },
   );
   //This to inject the services
