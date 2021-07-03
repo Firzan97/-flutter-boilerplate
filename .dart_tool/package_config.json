@@ -212,6 +212,18 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "gql",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/gql-0.12.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
+      "name": "graphql",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/graphql-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
       "name": "http",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
       "packageUri": "lib/",
@@ -350,6 +362,18 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "quiver",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "rxdart",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.24.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
       "name": "sentry",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/sentry-4.0.6",
       "packageUri": "lib/",
@@ -410,10 +434,22 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "uuid_enhanced",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/uuid_enhanced-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0-nullsafety.3",
       "packageUri": "lib/",
       "languageVersion": "2.10"
+    },
+    {
+      "name": "websocket",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/websocket-0.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "win32",
@@ -446,7 +482,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-01T22:28:45.986110Z",
+  "generated": "2021-04-02T02:33:00.385103Z",
   "generator": "pub",
   "generatorVersion": "2.10.4"
 }
